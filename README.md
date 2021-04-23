@@ -36,3 +36,12 @@ yarn dev
 yarn build
 yarn start
 ```
+
+
+## Aplicação
+
+<p align="center">
+  <img src="" width="800" alt="dashboard">
+  <img src="" width="800" alt="tocando">
+  <img src="" width="800" alt="episodio">
+</p>

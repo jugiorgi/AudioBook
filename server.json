@@ -1,8 +1,22 @@
 {
   "episodes": [
     {
+      "id": "o-hobbit",
+      "title": "Audiobook #9 | O Hobbit",
+      "members": "J.R.R. Tolkien",
+      "published_at": "2021-01-23 14:25:40",
+      "thumbnail": "https://elshaddai.com.br/wp-content/uploads/2019/06/O-Hobbit-J.R.R-Tolkien.jpg",
+      "description": "<p>Bilbo Bolseiro era um dos mais respeitáveis hobbits de todo o Condado até que, um dia, o mago Gandalf bate à sua porta. A partir de então, toda sua vida pacata e campestre soprando anéis de fumaça com seu belo cachimbo começa a mudar. Ele é convocado a participar de uma aventura por ninguém menos do que Thorin Escudo-de-Carvalho, um príncipe do poderoso povo dos Anãos.\nEsta jornada fará Bilbo, Gandalf e 13 anãos atravessarem a Terra-média, passando por inúmeros perigos, sejam eles, os imensos trols, as Montanhas Nevoentas infestadas de gobelins ou a muito antiga e misteriosa Trevamata, até chegarem (se conseguirem) na Montanha Solitária. Lá está um incalculável tesouro, mas há um porém. Deitado em cima dele está Smaug, o Dourado, um dragão malicioso que... bem, você terá que ler e descobrir.</p>",
+      "store": "https://www.amazon.com.br/Hobbit-p%C3%B4ster-J-R-R-Tolkien/dp/8595084742/ref=sr_1_1?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=o+hobbit&qid=1619213421&sr=8-1",
+      "file": {
+        "url": "https://r1---sn-bg07dnze.googlevideo.com/videoplayback?expire=1619224333&ei=rRKDYMieLtqG1wazy6mYBQ&ip=2a02%3A4780%3A8%3A6%3A2%3A16ce%3Acf1b%3A3bf&id=o-ACsE3yBNOIcz9bFdi5gMmf4Pw_-UWtPy2RQhLrdlMPxj&itag=18&source=youtube&requiressl=yes&vprv=1&mime=video%2Fmp4&ns=JbjZ6Lwr1rwUgA9xhKA7jO8F&gir=yes&clen=448624034&ratebypass=yes&dur=34336.902&lmt=1617049391259979&fvip=1&fexp=24001373,24007246&c=WEB&txp=6210222&n=n9XjH5sKhX5xgMIRPT&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cvprv%2Cmime%2Cns%2Cgir%2Cclen%2Cratebypass%2Cdur%2Clmt&sig=AOq0QJ8wRAIgRvKGCVnopvbo_nyowZxOf9Hc8oGsDJDQqzwC-jev5okCICMfrlsN6dTXv_8B-Heic4UzdgtFGBIliT7JA2Xr9PAs&rm=sn-5hnelr7e&req_id=e331bff8ac21a3ee&ipbypass=yes&redirect_counter=2&cm2rm=sn-8p8v-bg0se7e&cms_redirect=yes&mh=kE&mip=179.145.51.151&mm=29&mn=sn-bg07dnze&ms=rdu&mt=1619213085&mv=m&mvi=1&pl=24&lsparams=ipbypass,mh,mip,mm,mn,ms,mv,mvi,pl&lsig=AG3C_xAwRgIhAIbqZnOnCN7VbRWF-gZJ6R98yurhrlzW_okLrHBGeBbMAiEA4j3vyUFg2kKtVqpS-UMB3AgkInu_LmFk0y_dmvH-vKE%3D",
+        "type": "audio/x-m4a",
+        "duration": 34336
+      }
+    },
+    {
       "id": "harry-potter-e-a-pedra-filosofal",
-      "title": "Audiobook #9 | #1 - Harry Potter | Harry Potter e a Pedra Filosofal",
+      "title": "Audiobook #8 | #1 - Harry Potter | Harry Potter e a Pedra Filosofal",
       "members": "J.K. Rowling",
       "published_at": "2021-01-22 16:35:40",
       "thumbnail": "https://imagens.disal.com.br/produtos/ampliada/4164035.jpg",
@@ -16,7 +30,7 @@
     },
     {
       "id": "harry-potter-e-a-camara-secreta",
-      "title": "Audiobook #8 | #2 - Harry Potter | Harry Potter e a Câmara Secreta",
+      "title": "Audiobook #7 | #2 - Harry Potter | Harry Potter e a Câmara Secreta",
       "members": "J.K. Rowling",
       "published_at": "2021-01-20 15:00:01",
       "thumbnail": "https://images-na.ssl-images-amazon.com/images/I/81jbivNEVML.jpg",
@@ -30,7 +44,7 @@
     },
     {
       "id": "a-batalha-do-labirto",
-      "title": "Audiobook #7 | #4 - Percy Jackson | Percy Jackson e a Batalha do Labirinto",
+      "title": "Audiobook #6 | #4 - Percy Jackson | Percy Jackson e a Batalha do Labirinto",
       "members": "Rick Riordan",
       "published_at": "2021-01-16 00:13:32",
       "thumbnail": "https://images-na.ssl-images-amazon.com/images/I/6179ScT0+kL.jpg",
@@ -44,7 +58,7 @@
     },
     {
       "id": "a-maldicao-do-tita",
-      "title": "Audiobook #6 | #3 - Percy Jackson | Percy Jackson e a Maldição do Titã",
+      "title": "Audiobook #5 | #3 - Percy Jackson | Percy Jackson e a Maldição do Titã",
       "members": "Rick Riordan",
       "published_at": "2021-01-15 13:00:00",
       "thumbnail": "https://images-na.ssl-images-amazon.com/images/I/61t+25IRo2L.jpg",
@@ -58,7 +72,7 @@
     },
     {
       "id": "o-ladrao-de-raios",
-      "title": "Audiobook #5 | #1 - Percy Jackson | Percy Jackson e o Ladrão de Raios",
+      "title": "Audiobook #4 | #1 - Percy Jackson | Percy Jackson e o Ladrão de Raios",
       "members": "Rick Riordan",
       "published_at": "2021-01-14 17:01:01",
       "thumbnail": "https://images-na.ssl-images-amazon.com/images/I/61hH5E8xHZL.jpg",
@@ -72,7 +86,7 @@
     },
     {
       "id": "a-rainha-vermelha",
-      "title": "Audiobook #4 | #1 - A Rainha Vermelha | A Rainha Vermelha",
+      "title": "Audiobook #3 | #1 - A Rainha Vermelha | A Rainha Vermelha",
       "members": "Victoria Aveyard",
       "published_at": "2021-01-13 22:11:03",
       "thumbnail": "https://images-na.ssl-images-amazon.com/images/I/41rK-7HUAML._SX346_BO1,204,203,200_.jpg",
@@ -86,7 +100,7 @@
     },
     {
       "id": "o-morro-dos-ventos-uivantes",
-      "title": "Audiobook #3 | O Morro dos Ventos Uivantes",
+      "title": "Audiobook #2 | O Morro dos Ventos Uivantes",
       "members": "Emily Brontë",
       "published_at": "2021-01-12 09:07:14",
       "thumbnail": "https://images-na.ssl-images-amazon.com/images/I/51HgwirtaDL._SX346_BO1,204,203,200_.jpg",
@@ -100,7 +114,7 @@
     },
     {
       "id": "o-homem-de-giz",
-      "title": "Audiobook #2 | O Homem de Giz",
+      "title": "Audiobook #1 | O Homem de Giz",
       "members": "C. J. Tudor",
       "published_at": "2021-01-11 14:23:21",
       "thumbnail": "https://lojasaraiva.vteximg.com.br/arquivos/ids/31764501/1011254193.jpg?v=637489784652230000",

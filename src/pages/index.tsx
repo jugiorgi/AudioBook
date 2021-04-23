@@ -122,7 +122,6 @@ export default function Home({ latestEpisodes, allEpisodes }: HomeProps) {
 export const getStaticProps: GetServerSideProps = async () => {
   const { data } = await api.get('/episodes', {
     params: {
-      _limit: 12,
       _sort: 'published_at',
       _order: 'desc'
     }
@@ -149,6 +148,6 @@ export const getStaticProps: GetServerSideProps = async () => {
       latestEpisodes,
       allEpisodes
     },
-    // revalidate: 60 * 60 * 8
+    revalidate: 60 * 60 * 8 
   }
 }
