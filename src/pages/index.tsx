@@ -22,6 +22,7 @@ type Episode = {
   durationAsString: string;
   url: string;
   publishedAt: string;
+  store: string;
 }
 
 type HomeProps = {
@@ -76,8 +77,9 @@ export default function Home({ latestEpisodes, allEpisodes }: HomeProps) {
             <thead>
               <tr>
                 <th></th>
-                <th>Podcast</th>
-                <th>Integrantes</th>
+                <th>Audiobook</th>
+                <th>Autor</th>
+                <th>Publicação</th>
                 <th>Duração</th>
                 <th></th>
               </tr>

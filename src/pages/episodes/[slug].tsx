@@ -1,13 +1,13 @@
 import { format, parseISO } from "date-fns";
 import { ptBR } from "date-fns/locale";
-import { GetStaticPaths, GetStaticProps } from "next"
+import { GetStaticPaths, GetStaticProps } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { api } from "../../services/api"
+import { api } from "../../services/api";
 import { convertDurationToTimeString } from "../../utils/convertDurationToTimeString";
-import styles from './episode.module.scss'
+import styles from "./episode.module.scss";
 
-import { useRouter } from 'next/router'
+import { useRouter } from "next/router";
 import { usePlayer } from "../../contexts/PlayerContext";
 import Head from "next/head";
 
@@ -21,18 +21,19 @@ type Episode = {
   durationAsString: string;
   url: string;
   publishedAt: string;
-}
+  store: string;
+};
 
 type EpisodeProps = {
   episode: Episode;
-}
+};
 
-export default function Episode({ episode }: EpisodeProps ) {
-  const { play } = usePlayer()
-  const router = useRouter()
+export default function Episode({ episode }: EpisodeProps) {
+  const { play } = usePlayer();
+  const router = useRouter();
 
   if (router.isFallback) {
-    return <p>Carregando...</p>
+    return <p>Carregando...</p>;
   }
 
   return (
@@ -44,7 +45,7 @@ export default function Episode({ episode }: EpisodeProps ) {
       <div className={styles.thumbnailContainer}>
         <Link href="/">
           <button>
-            <img src="/arrow-left.svg" alt="Voltar" width="30px"/>
+            <img src="/arrow-left.svg" alt="Voltar" width="30px" />
           </button>
         </Link>
         <Image
@@ -54,7 +55,7 @@ export default function Episode({ episode }: EpisodeProps ) {
           objectFit="cover"
         />
         <button onClick={() => play(episode)}>
-          <img src="/play-blue.svg" alt="Tocar episódio" width="30px"/>
+          <img src="/play-blue.svg" alt="Tocar episódio" width="30px" />
         </button>
       </div>
 
@@ -68,34 +69,41 @@ export default function Episode({ episode }: EpisodeProps ) {
       <div
         className={styles.description}
         dangerouslySetInnerHTML={{
-          __html:
-          episode.description
-        }} 
+          __html: episode.description,
+        }}
       />
+
+      <footer>
+        <span>Para comprar o livro físico:</span>
+        <div>
+          <img src="/amazon-icon.svg" alt="Amazon" width="30px" />
+          <a href={episode.store}>{episode.title}</a>
+        </div>
+      </footer>
     </div>
-  )
+  );
 }
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  const { data } = await api.get('episodes', {
+  const { data } = await api.get("episodes", {
     params: {
       __limit: 2,
-      __sort: 'published_at',
-      __order: 'desc'
-    }
-  })
+      __sort: "published_at",
+      __order: "desc",
+    },
+  });
 
-  const paths = data.map(episode => ({
+  const paths = data.map((episode) => ({
     params: {
-      slug: episode.id
-    }
-  }))
+      slug: episode.id,
+    },
+  }));
 
   return {
     paths,
-    fallback: 'blocking'
-  }
-}
+    fallback: "blocking",
+  };
+};
 
 export const getStaticProps: GetStaticProps = async (ctx) => {
   const { slug } = ctx.params;
@@ -107,19 +115,20 @@ export const getStaticProps: GetStaticProps = async (ctx) => {
     title: data.title,
     thumbnail: data.thumbnail,
     members: data.members,
-    publishedAt: format(parseISO(data.published_at), 'd MMM yy', { 
-      locale: ptBR
+    publishedAt: format(parseISO(data.published_at), "d MMM yy", {
+      locale: ptBR,
     }),
     duration: Number(data.file.duration),
     durationAsString: convertDurationToTimeString(Number(data.file.duration)),
     description: data.description,
+    store: data.store,
     url: data.file.url,
-  }
+  };
 
   return {
     props: {
-      episode
+      episode,
     },
-    revalidate: 60 * 60 * 24 
-  }
-}
+    revalidate: 60 * 60 * 24,
+  };
+};

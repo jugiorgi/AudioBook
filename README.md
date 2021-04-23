@@ -8,7 +8,7 @@
 
 ## Sobre
 
-O Audiobook é uma plataforma para ouvir os melhores episódios de um podcast
+O Audiobook é uma plataforma para ouvir os melhores livros
 
 <br />
 
