@@ -41,7 +41,7 @@ yarn start
 ## Aplicação
 
 <p align="center">
-  <img src="" width="800" alt="dashboard">
-  <img src="" width="800" alt="tocando">
-  <img src="" width="800" alt="episodio">
+  <img src="https://raw.githubusercontent.com/jugiorgi/AudioBook/main/src/assets/dashboard.PNG" width="800" alt="dashboard">
+  <img src="https://raw.githubusercontent.com/jugiorgi/AudioBook/main/src/assets/tocando.PNG" width="800" alt="tocando">
+  <img src="https://raw.githubusercontent.com/jugiorgi/AudioBook/main/src/assets/episodio.PNG" width="800" alt="episodio">
 </p>
